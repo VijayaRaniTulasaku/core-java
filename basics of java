@@ -8,12 +8,78 @@ Finally in 1996 it is named by JDK 1.0 (First official release (January -1996) -
 Versions 
 -> Java 1.0 (Jan 1996) - JVM, core libraries, applets- "Write Once, Run Anywhere"
 -> Java 5 (Sep 2004) - Generics, annotations, enums, enhanced for-loop.
+-> Java 8 - It is standard version and Java 8 (2014) march  Lambda expressions,Stream API,New Date and Time API,Functional programming support.
+-> Java 11 (2018)-Improved performance,New HTTP Client API,String methods and other library improvements,Simplified execution of Java programs.
+-> Java 17 (2021)-Records,Sealed classes,Pattern matching improvements,Better performance and security.
+-> Java 21 (2023)-Virtual threads,Pattern matching.
 
-Data types
-Numeric Datatypes
-1.int
-2.float
-3.double
-4.short
-5.long
-6.byte
+Datatypes: 
+  Numerical_datatypes - Int,float,short,double,long,byte.
+  String_datatypes - char,string.
+  Boolean_datatype - boolean(True, False)
+
+Primitive Datatypes
+byte, short, int, long, float, double, char, boolean
+PRIMITIVE
+byte	1 byte	Stores small integer values	byte a = 10;
+short	2 bytes	Stores short integer values	short b = 1000;
+int	4 bytes	Stores integer values	int c = 50000;
+long	8 bytes	Stores large integer values	long d = 123456L;
+float	4 bytes	Stores decimal values	float e = 10.5f;
+double	8 bytes	Stores large decimal values	double f = 25.567;
+char	2 bytes	Stores a single character	char g = 'A';
+
+Non-primitive Datatypes
+String, Array, Class, Object, Interface
+
+Definition: Variable declaration is the process of specifying a variable's data type and name to create a variable in Java
+a varibale is named memory location used to store data.
+
+
+Method Explanation
+Scanner Method          Example          Return Type
+nextInt()               25               int
+nextLong()              9876543210L      long
+nextFloat()             85.5f            float
+nextDouble()            25000.75         double
+next()                  rani             String
+nextLine()              Hello java       String
+next.charAt()           A                char
+nextBoolean()           true             Boolean
+
+FIRST PROGRAM
+import java.util.Scanner;
+class Add
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+
+        int age;
+        float marks;
+        char grade;
+        String result;
+        long total_marks;
+        Double percentage;
+
+        System.out.print("Enter age:");
+        age=sc.nextInt();
+        System.out.print("Enter marks:");
+        marks=sc.nextFloat();
+        System.out.print("Enter grade:");
+        grade=sc.next().charAt(0);
+        System.out.print("Enter result:");
+        result=sc.next();
+        System.out.print("Enter total marks:");
+        total_marks=sc.nextLong();
+        System.out.println("Enter percentage:");
+        percentage=sc.nextDouble();
+        
+        System.out.println("Age: " + age);
+        System.out.println("Marks: " + marks);
+        System.out.println("Grade: " + grade);
+        System.out.println("Result: " + result);
+        System.out.println("Total Marks: " + total_marks);
+        System.out.println("Percentage: " + percentage);
+    }
+}
