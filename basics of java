@@ -1,0 +1,19 @@
+Started name was green project - 1991 (James gosling and a small team at Sun Microsystems explore software for consumer devices)
+After changed into named "OAK" - 1991 (The new language is named after an oak tree outside Gosling's office)
+-> OAK is a satilite project. 
+After name is changed into Star7 demo - 1992. (A handheld prototype (*7) shows oak code running on custom hardware)
+After that it is renamed as Java - 1995 ("Oak" is already trademarked; java is publicly announced in May 1995)
+Finally in 1996 it is named by JDK 1.0 (First official release (January -1996) -java goes mainstream).
+
+Versions 
+-> Java 1.0 (Jan 1996) - JVM, core libraries, applets- "Write Once, Run Anywhere"
+-> Java 5 (Sep 2004) - Generics, annotations, enums, enhanced for-loop.
+
+Data types
+Numeric Datatypes
+1.int
+2.float
+3.double
+4.short
+5.long
+6.byte
