@@ -92,3 +92,62 @@ OPERTIONS
 -> Multiplication(*)
 -> Division(/)
 -> Modulo Division(%)
+
+SECOND PROGRAM
+import java.util.Scanner;
+class Arithmetic
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int pettycash,tiffin,dinner,total_expensive,savings;
+        float average_perday;
+        pettycash=sc.nextInt();
+        tiffin=sc.nextInt();
+        dinner=sc.nextInt();
+        total_expensive=tiffin+dinner;
+        average_perday=(float)total_expensive/7;
+        savings=pettycash-total_expensive;
+        System.out.println("Savings: " + savings);
+        System.out.println("Total Expenses: " + total_expensive);
+        System.out.println("Average per Day: " + average_perday);
+    }
+}
+
+BITWISE
+import java.util.Scanner;
+public class Bitwise
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("The number is: " + (a & b));
+        System.out.println("The number is: " + (a | b));
+        System.out.println("The number is: " + (a ^ b));
+        System.out.println("The number is: " + (~a));
+        System.out.println("The number is: " + (a << b));
+        System.out.println("The number is: " + (a >> b));
+    }
+}
+
+ASSIGMNENT
+import java.util.Scanner;
+public class Assignment
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("The number is: " + (a >= b));
+        System.out.println("The number is: " + (a <= b));
+        System.out.println("The number is: " + (a == b));
+        System.out.println("The number is: " + (~a));
+        System.out.println("The number is: " + (a << b));
+        System.out.println("The number is: " + (a >> b));
+    }
+}
