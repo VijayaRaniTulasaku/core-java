@@ -83,3 +83,12 @@ class Add
         System.out.println("Percentage: " + percentage);
     }
 }
+
+
+OPERTIONS
+1.Arithmetic Opertaors
+-> Addition (+)
+-> Subtraction (-)
+-> Multiplication(*)
+-> Division(/)
+-> Modulo Division(%)
