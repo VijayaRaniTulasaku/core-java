@@ -383,3 +383,85 @@ for(int i=1;i<=10;i++){
   }
   //statement 1
 }
+
+-->First program(Simple program)
+import java.util.Scanner;
+class Nestedloop
+{
+    public static void main(String args[])
+    {
+        for(int i=1;i<=10;i++)
+        {
+            for(int j=1;j<=10;j++)
+            {
+                System.out.print(j);
+            }
+            System.out.println(" "+i);
+        }
+    }
+}
+
+-->Second program(Multiplication of tables 1 to 40)
+import java.util.Scanner;
+class Tables
+{
+    public static void main(String args[])
+    {
+        int num=10;
+        for(int i=1;i<=40;i++)
+        {
+            for(int j=1;j<=num;j++)
+            {
+                System.out.println(i + " * " + j + " = " + (i * j) + " ");
+            }
+            
+        }
+    }
+}
+
+-->Third Program(Multiplication of tables 1 to 40 with start and end)
+import java.util.Scanner;
+class Table
+{
+    public static void main(String args[])
+    {
+        int num=10;
+        for(int i=1;i<=40;i++)
+        {
+            System.out.println("Multiplication table of " + i);
+            System.out.println("Started .......");
+            for(int j=1;j<=num;j++)
+            {
+                System.out.println(i + " * " + j + " = " + (i * j) + " ");
+            }
+            System.out.println("Ended .......");
+        }
+    }
+}
+
+-->Fourth program(Multiplication of tables 1 to 40 even and odd)
+import java.util.Scanner;
+class Evenodd {
+    public static void main(String args[]) {
+        int num = 10;
+        System.out.println("EVEN TABLES");
+        for (int i = 1; i <= 40; i++) {
+            if (i % 2 == 0) {
+                for (int j = 1; j <= num; j++) {
+                    System.out.println(i + " * " + j + " = " + (i * j));
+                }
+                System.out.println();
+            }
+        }
+        System.out.println("ODD TABLES");
+        for (int i = 1; i <= 40; i++) {
+            if (i % 2 != 0) {
+                for (int j = 1; j <= num; j++) {
+                    System.out.println(i + " * " + j + " = " + (i * j));
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+
