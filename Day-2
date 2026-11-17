@@ -131,3 +131,121 @@ if condition1{
     }
     //block of code statement1
 }
+
+Program
+import java.util.Scanner;
+class Nestedif
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int value1=sc.nextInt();
+        if(value1>=20)
+        {
+            if(value1>20)
+            {
+                System.out.println("Condition2");
+            }
+            System.out.println("Condition1");
+        }
+    }
+}
+
+SWITCH SYNTAX
+switch(condition){
+case 1:
+    //statement 1;
+   //break;
+case 2:
+    //statement 2;
+   //break;
+case n:
+    //statement n;
+   //break;
+}
+
+First Program
+import java.util.Scanner;
+class Switch
+{
+    public static void main(String sargs[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int value1=sc.nextInt();
+        switch(value1)
+        {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid input");
+        }
+    }
+}
+
+Third Program
+import java.util.Scanner;
+class Switchmits
+{
+    public static void main(String sargs[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int value1=sc.nextInt();
+        switch(value1)
+        {
+            case 1:
+                System.out.println("CSE");
+                break;
+            case 2:
+                System.out.println("ECE");
+                break;
+            case 3:
+                System.out.println("EEE");
+                break;
+            case 4:
+                System.out.println("MECH");
+                break;
+            case 5:
+                System.out.println("CIVIL");
+                break;
+            case 6:
+                System.out.println("AI");
+                break;
+            case 7:
+                System.out.println("AIML");
+                break;
+            case 8:
+                System.out.println("CSD");
+                break;
+            case 9:
+                System.out.println("Cyber security");
+                break;
+            case 10:
+                System.out.println("CCC");
+                break;
+            default:
+                System.out.println("Invalid input");
+        }
+    }
+}
