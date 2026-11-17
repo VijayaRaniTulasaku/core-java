@@ -375,3 +375,11 @@ class Forloop
         }
     }
 }
+
+NESTED LOOP SYNTAX
+for(int i=1;i<=10;i++){
+  for(int i=1;;i<=10;i++){
+    //statement 2
+  }
+  //statement 1
+}
