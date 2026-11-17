@@ -531,3 +531,11 @@ public class Rectanglestar {
         System.out.println("Total stars: " + n);
     }
 }
+
+
+WHILE LOOP SYNTAX
+initialize variable
+while(condition){
+    //statement,
+    //++/--;
+}
