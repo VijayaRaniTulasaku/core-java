@@ -20,3 +20,114 @@ JUMPING STATEMENTS
 -> continue
 -> break
 -> return
+
+CONDITIONAL STATEMENTS 
+SYNTAX - Set of rules & regulations used to write the code in correct manner.
+IF Syntax:
+  if condition{
+    //block of code
+}
+
+Program
+import java.util.Scanner;
+class If
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        if(a<=b)
+        {
+            System.out.print("Condition is true");
+        }
+    }
+}
+
+IFELSE SYNTAX:
+if condition{
+    //block of code
+}
+else{
+//block of code
+}
+
+Program
+import java.util.Scanner;
+class Ifelse
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        if(a<=b)
+        {
+            System.out.print("Condition is true");
+        }
+        else
+        {
+            System.out.print("Condition is false");
+        }
+    }
+}
+
+
+ELSEIF LADDER SYNTAX:
+if condition1{
+    //block of code
+}
+else if condition2{
+    //block of code
+}
+else if condition3{
+    //block of code
+}
+else if condition4{
+    //block of code
+}
+else{
+//block of code
+}
+
+Program
+import java.util.Scanner;
+class Elseifladder
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int marks=sc.nextInt();
+        if(marks>=80)
+        {
+            System.out.println("Distinction");
+        }
+        else if(marks<80 && marks>=60)
+        {
+            System.out.println("first class");
+        }
+        else if(marks<60 && marks>=50)
+        {
+            System.out.println("Second class");
+        }
+        else if(marks<60 && marks>=35)
+        {
+            System.out.println("third class");
+        }
+        else
+        {
+            System.out.println("fail");
+        }
+    }
+}
+
+NESTED IF SYNTAX:
+if condition1{
+    if condition2{
+        //block of code statement2
+    }
+    //block of code statement1
+}
