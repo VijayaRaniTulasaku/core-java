@@ -236,3 +236,84 @@ public class Rightrotation {
         }
     }
 }
+
+STRINGS
+-->* Methods of Strings
+1. length()
+-> Returns the number of characters in a String.
+
+'''java
+String s="Java";
+System.out.println(s.length());
+
+output:'4'
+
+2. charAt()
+->Returns the character at a specified index.
+'''java
+String s="Java";
+System.out.println(s.charAt());
+
+Output: 'a'
+
+3. toUpperCase()
+Converts all characters into uppercase.
+'''java
+String s="java";
+System.out.println(s.toUpperCase());
+
+Output: 'JAVA'
+
+4. toLowerCase()
+Converts all characters into Lowercase.
+'''java
+String s="JAVA";
+System.out.ptintln(s.toLowerCase());
+
+Output: 'java'
+
+5.equals()
+compares two strings based on their content
+'''java
+String a="Java";
+String b="Java";
+System.out.println(a.equlas(b));
+
+Output: 'true'
+
+6. equalsIgnoreCase()
+Compares Strings without considering uppercase or lowercase differences
+'''java
+String a="JAVA";
+String b="java";
+System.out.println(a.equalsIgnoreCase(b));
+
+Output: 'true'
+
+7. contains()
+checks whether a string contains a particular sequence of characters.
+'''java
+String s="Java Programming";
+System.out.println(s.conatins("Java"));
+
+Output: 'true'
+
+8.substring()
+Extracts a part of a string.
+'''java
+String s="Programming";
+System.out.println(s.substring(0,4));
+
+Output: 'Prog'
+
+9.replace()
+Replaces characters or character sequences.
+'''java
+String s="Java";
+System.out.println(s.replace('a','o'));
+
+Output: 'Jovo'
+
+10.trim()
+Removes leading and trailing spaces.
+'''java
