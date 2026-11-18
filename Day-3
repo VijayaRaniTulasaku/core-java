@@ -317,3 +317,12 @@ Output: 'Jovo'
 10.trim()
 Removes leading and trailing spaces.
 '''java
+String s=" Hello ";
+System.out.println(s.trim());
+
+Output: 'Hello'
+
+11. startsWith()
+Checks whether a string starts with a specified value.
+'''java
+String s="
