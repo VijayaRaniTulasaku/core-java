@@ -136,3 +136,103 @@ class Swapping {
        }
     }
 }
+
+-->Program(2D Array)
+import java.util.Scanner;
+class Array2d
+{
+    public static void main(String args[])
+    {
+        int a[][]=new int[3][3];
+        int sum=0;
+        a[0][0]=10;
+        a[0][1]=20;
+        a[0][2]=30;
+        a[1][0]=40;
+        a[1][1]=50;
+        a[1][2]=60;
+        a[2][0]=70;
+        a[2][1]=80;
+        a[2][2]=90;
+        for(int row=0;row<=a.length-1;row++)
+        {
+            for(int col=0;col<=a.length-1;col++)
+            {
+                System.out.println(a[row][col]);
+                sum+=a[row][col];
+            }
+        }
+        System.out.println("Sum: " + sum);
+    }
+}
+
+
+--> Program(3D Array)
+import java.util.Scanner;
+class Array3d
+{
+    public static void main(String args[])
+    {
+        int a[][][]=new int[3][3][3];
+        int sum=0;
+        a[0][0][0]=10;
+        a[0][0][1]=20;
+        a[0][0][2]=30;
+        a[0][1][0]=40;
+        a[0][1][1]=50;
+        a[0][1][2]=60;
+        a[0][2][0]=70;
+        a[0][2][1]=80;
+        a[0][2][2]=100;
+        a[1][0][0]=12;
+        a[1][0][1]=203;
+        a[1][0][2]=302;
+        a[1][1][0]=403;
+        a[1][1][1]=503;
+        a[1][1][2]=603;
+        a[1][2][0]=703;
+        a[1][2][1]=803;
+        a[1][2][2]=903;
+        a[2][0][0]=190;
+        a[2][0][1]=200;
+        a[2][0][2]=300;
+        a[2][1][0]=400;
+        a[2][1][1]=500;
+        a[2][1][2]=600;
+        a[2][2][0]=700;
+        a[2][2][1]=800;
+        a[2][2][2]=900;
+        for(int row=0;row<=a.length-1;row++)
+        {
+            for(int col=0;col<=a.length-1;col++)
+            {
+                for(int high=0;high<=a.length-1;high++)
+                {
+                    System.out.println(a[row][col][high]);
+                    sum+=a[row][col][high];
+                }
+            }
+        }
+        System.out.println("Sum: " + sum);
+
+    }
+}
+
+-->Program (Right Rotation)
+import java.util.Scanner;;
+public class Rightrotation {
+    public static void main(String args[])
+    {
+        int a[]={1,2,3,4,5};
+        int temp=a[0];
+        for(int i=0;i<a.length-1;i++)
+        {
+            a[i]=a[i+1];
+        }
+        a[a.length-1]=temp;
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+}
