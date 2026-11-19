@@ -8,3 +8,9 @@ Java
 ->String, StringBuilder, StringBuffer, Pattern and Matcher.
 Patterns
 ->Two pointers->Frequency maps->sliding window->regex.
+
+INSPECT
+1.charAt()  -->obj.charAt()
+2.length()  -->obj.length()
+3.isEmpty() -->obj.isEmpty()
+4.isBlank() -->obj.isBlank()
