@@ -14,3 +14,44 @@ INSPECT
 2.length()  -->obj.length()
 3.isEmpty() -->obj.isEmpty()
 4.isBlank() -->obj.isBlank()
+
+EXTRACTION BY INDEX
+str="rani";
+1.substring  -->str.substring(0,4)
+2.indexOf    -->str.indexOf("r")
+
+COMPARE
+1.equlas()  -->str.equals(str1)("rani")
+2.compareTo() -->str.compareTo(str1)("vijayarani")
+
+FIND
+str="rani56@gmail.com"
+1.startsWith() --> str.startsWith("rani")
+2.endsWith()  --> str.endsWith(".com")
+3.contains() --> str.contains("@")
+
+TRANSFORM
+str="rani "
+str1="vijaya   rani"
+1.trim  -->str.trim()
+2.strip() -->str1.strip()
+3.concate() -->str.concate("hello")str2
+4.repeat() -->str.repeat(3)
+
+REPLACE
+str="rani"
+1.replace() -->str.replace('a','o)
+2.replaceAll() -->str.replaceAll("
+3.replaceFirst() -->
+
+split() -->str.split(",")
+join() -->str.join("vijaya",str)
+
+toCharArray() -->char[] rani="rani"toCharArray();
+valueOf -->str.valueOf(4)
+
+MATCHES AND FORMATTING
+matches() -->str.match([0-9])
+formatted() -->format(Hi, rani is scored 90%)
+
+STRING BUILDER
