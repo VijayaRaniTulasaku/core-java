@@ -1,0 +1,10 @@
+JAVA FULL STACK
+Java Strings
+Fundamentals->Methods->StringBuilder->Coding problems->Regex->Interviews
+
+Core idea
+->Text is stored as a sequence of characters, indexed from 0.
+Java
+->String, StringBuilder, StringBuffer, Pattern and Matcher.
+Patterns
+->Two pointers->Frequency maps->sliding window->regex.
