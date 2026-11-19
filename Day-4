@@ -150,3 +150,57 @@ class Stringbuilder
         System.out.println(obj);
     }
 }
+
+OOP
+1.concrete class
+2.Abstract class
+3.Final class
+4.Static Nested class
+5.Inner class
+6.Local class
+7.Anonymu
+8.Enum class
+9.Interface
+
+1.CONCRETE CLASS
+-> A concentrating class is a regular class that can be used to create the objects.
+
+CONSTRUCTORS
+->default constructor
+->non-parameterized constructor
+->parameterized constructor
+
+ACCESS SPECIFIERS
+->public
+->private
+->protected
+->default
+
+VARIABLES
+->local variable
+->global variable
+->instant variable
+
+FUNCTION
+1.with parameters with return type
+2.with parameters without return type
+3.without parameters with return type
+4.without parameters without return type
+
+Encapsulation->hide data, expose safe methods
+Inheritance->Reuse code through IS
+Polymorphism->Abstraction
+
+NON-STATIC METHOD
+class rani
+{
+    non-static int vijaya(int a,int b)
+    {
+        return a*b;
+    }
+    public static void main(String args[])
+    {
+    rani obj=new rani();
+    obj.vijaya(10,20);
+}
+}
