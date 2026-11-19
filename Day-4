@@ -55,3 +55,98 @@ matches() -->str.match([0-9])
 formatted() -->format(Hi, rani is scored 90%)
 
 STRING BUILDER
+import java.util.*;
+class Stringbuilder
+{
+    public static void main(String args[])
+    {
+        StringBuilder obj=new StringBuilder("Hello");
+        System.out.println(obj);
+    }
+}
+
+-->Methods
+import java.util.*;
+class Stringbuilder
+{
+    public static void main(String args[])
+    {
+        StringBuilder obj=new StringBuilder("Hello");
+        obj.insert(2,"is");
+        System.out.println(obj);
+        obj.replace(1,3,"world");
+        System.out.println(obj);
+        obj.delete(1,3);
+        System.out.println(obj);
+        obj.deleteCharAt(4);
+        System.out.println(obj);
+        obj.reverse();
+        System.out.println(obj);
+        obj.capacity();
+        System.out.println(obj);
+        obj.charAt(0);
+        System.out.println(obj);
+        obj.setCharAt(1,'v');
+        System.out.println(obj);
+        obj.toString();
+        System.out.println(obj);
+    }
+}
+
+
+STRING BUFFER
+import java.util.*;
+class Stringbuilder
+{
+    public static void main(String args[])
+    {
+        StringBuffer obj=new StringBuffer("Hello");
+        System.out.println(obj);
+    }
+}
+
+
+--> Methods
+import java.util.*;
+class Stringbuffer
+{
+    public static void main(String args[])
+    {
+        StringBuffer obj=new StringBuffer("Hello");
+        obj.insert(2,"is");
+        System.out.println(obj);
+        obj.replace(1,3,"world");
+        System.out.println(obj);
+        obj.delete(1,3);
+        System.out.println(obj);
+        obj.deleteCharAt(4);
+        System.out.println(obj);
+        obj.reverse();
+        System.out.println(obj);
+        obj.capacity();
+        System.out.println(obj);
+        obj.charAt(0);
+        System.out.println(obj);
+        obj.setCharAt(1,'v');
+        System.out.println(obj);
+        obj.toString();
+        System.out.println(obj);
+    }
+}
+
+
+
+-->Program of using String builder,buffer, and append
+import java.util.*;
+class Stringbuilder
+{
+    public static void main(String args[])
+    {
+        StringBuilder obj=new StringBuilder("Hello");
+        System.out.println(obj);
+        StringBuffer obj1=new StringBuffer("Hi");
+        System.out.println(obj1);
+        obj.append("rani");
+        System.out.println(obj);
+    }
+}
