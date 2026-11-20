@@ -1,0 +1,33 @@
+OOPS-object oriented programming
+1.ENCAPSULATION->wrapping (or) binding of data
+2.POLYMORPHISM->it implements two types
+                1.method overloading-->same method with different parameters(Single class)
+                2.method overriding-->same method with same parameters(2 classes)
+*poly means->many
+*morphism means-> forms
+
+3.INHERITANCE
+TYPES OF INHERITANCE
+1.single
+2.multi level
+3.hierarical
+4.multiple->it is not acceptable in inheritance (it consists interfaces)
+5.hybrid
+
+Syntax's
+1.SINGLE INHERITANCE
+class A
+{
+  //block of code
+}
+class B extends A
+{
+  //block of code
+}
+class Main
+{
+  psvm
+  {
+    //obj
+  }
+}
