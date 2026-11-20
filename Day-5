@@ -95,3 +95,238 @@ class Main
   }
 }
 
+SINGLE INHERITANCE
+-->PROGRAM 1
+import java.util.*;
+class A
+{
+    int area(int a,int b)
+    {
+        return a*b;
+    }
+}
+class B extends A
+{
+    int areaofsquare(int a)
+    {
+        return a*a;
+    }
+}
+class Single
+{
+    public static void main(String args[])
+    {
+        B obj=new B();
+        System.out.println(obj.area(20,30));
+        System.out.println(obj.areaofsquare(4));
+    }
+}
+
+-->PROGRAM 2
+import java.util.*;
+class A
+{
+    int add(int a,int b)
+    {
+        return a+b;
+    }
+}
+class B extends A
+{
+    int sub(int a,int b)
+    {
+        return a-b;
+    }
+}
+class Single1
+{
+    public static void main(String args[])
+    {
+        B obj=new B();
+        System.out.println(obj.add(20,30));
+        System.out.println(obj.sub(20,30));
+    }
+}
+
+MULTILEVEL INHERITANCE
+-->PROGRAM 1
+
+class venu{
+    void fun(){
+        System.out.println("Hello fun methods");
+    }
+}
+class varu extends venu{
+    void monkey(){
+        System.out.println("hello Mits ");
+    }
+}
+class ven extends varu{
+    public void display(){
+        System.out.println("Hello world");
+    }
+    public void msg(){
+        System.out.println("hello vamshi");
+    }
+}
+class Multilevel{
+    public static void main(String[] args) {
+        ven obj= new ven();
+        obj.fun();
+        obj.monkey();
+        obj.display();
+        obj.msg();
+    }
+}
+
+-->PROGRAM 2
+import java.util.*;
+class A
+{
+    int mul(int a,int b)
+    {
+        return a*b;
+    }
+}
+class B extends A
+{
+    int div(int a,int b)
+    {
+        return a/b;
+    }
+}
+class C extends B
+{
+    int mod(int a,int b)
+    {
+        return a%b;
+    }
+}
+class Multilevel1
+{
+    public static void main(String args[])
+    {
+        C obj=new C();
+        System.out.println(obj.mul(20,30));
+        System.out.println(obj.div(20,30));
+        System.out.println(obj.mod(20,30));
+    }
+}
+
+MULTIPLE INHERITANCE
+
+interface venu{
+    void display();
+}
+interface vamshi{
+    void msg();
+}
+class ven implements venu,vamshi{
+    public void display(){
+        System.out.println("Hello world");
+    }
+    public void msg(){
+        System.out.println("hello vamshi");
+    }
+}
+class Multiple{
+    public static void main(String[] args) {
+        ven obj= new ven();
+        obj.display();
+        obj.msg();
+    }
+}
+
+-->PROGRAM 2
+
+interface venu{
+    void add(int a,int b);
+}
+interface vamshi{
+    void sub(int a,int b);
+}
+class ven implements venu,vamshi{
+    public void add(int a,int b){
+        System.out.println("Addition is: "+(a+b));
+    }
+    public void sub(int a,int b){ 
+        System.out.println("Subtraction is: "+(a-b));
+    }
+}
+class Multiple1{
+    public static void main(String[] args) {
+        ven obj= new ven();
+        obj.add(20,30);
+        obj.sub(30,20);
+    }
+}
+
+HYBRID
+-->PROGRAM
+
+interface pet{
+    void play();
+}
+class animal{
+    void eat(){
+        System.out.println("animal is eating");
+    }
+}
+class dog extends animal implements pet{
+    public void play(){
+        System.out.println("animal is playing games");
+    }
+    void mam(){
+        System.out.println("mam is playing with animals");
+    }
+
+}
+class cat extends animal implements pet{
+    public void play(){
+        System.out.println("hello world");
+    }
+    void men(){
+        System.out.println("men is playing game");
+    }
+}
+class Hybrid{
+    public static void main(String args[]){
+        dog obj = new dog();
+        cat obj1 = new cat();
+        obj.eat();
+        obj.mam();
+        obj.play();
+        obj1.eat();
+        obj1.men();
+        obj1.play();
+    }
+}
+
+HIERARICHAL
+-->PROGRAM
+
+class A{
+    void display(){
+        System.out.println("enter a value");
+    }
+}
+class B extends A{
+    void mam(){
+        System.out.println("enter b value");
+    }
+}
+class C extends A{
+    void vamshi(){
+        System.out.println("enter a vamshi");
+    }
+}
+class Hirerachal {
+    public static void main(String[]args){
+        B sc = new B();
+        C s = new C();
+        sc.mam();
+        sc.display();
+        s.vamshi();
+        s.display();
+    }
+}
