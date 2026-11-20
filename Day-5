@@ -31,3 +31,67 @@ class Main
     //obj
   }
 }
+
+2.MULTILEVEL INTERFACE
+class A
+{
+  //block of code
+}
+class B extends A
+{
+  //block of code
+}
+class c extends B
+{
+  //block of code
+}
+class Main
+{
+  psvm
+  {
+    //obj
+  }
+}
+
+3.MULTIPLE INHERITANCE
+Interface A
+{
+  //block of code
+}
+Interface B
+{
+  //block of code
+}
+class C implements A,B
+{
+  //block of code
+}
+class Main
+{
+  psvm
+  {
+    //obj
+  }
+}
+
+4.HIERARICAL INHERITANCE
+class A
+{
+  //block of code
+}
+class B extends A
+{
+  //block of code
+}
+class c extends A
+{
+  //block of code
+}
+class Main
+{
+  psvm
+  {
+    //obj
+  }
+}
+
