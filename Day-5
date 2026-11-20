@@ -330,3 +330,128 @@ class Hirerachal {
         s.display();
     }
 }
+
+
+METHOD OVERLOADING
+-->PROGRAM
+class Overloading{
+    void add(int a,int b){
+        System.out.println(a+b);
+    }
+    void add(int a,int b,int c){
+        System.out.println(a+b+c);
+    }
+    public static void main(String args[]){
+        Overloading obj = new Overloading();
+        obj.add(10,20);
+        obj.add(10,20,30);
+    }
+}
+
+METHOD OVERRIDING
+-->PROGRAM
+class Animal {
+
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Animal {
+
+    @Override
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+class Overriding {
+    public static void main(String[] args) {
+
+        Animal a;
+
+        a = new Dog();
+        a.sound();
+
+        a = new Cat();
+        a.sound();
+
+        a = new Animal();
+        a.sound();
+    }
+}
+
+
+ABSTRACTION
+-->PROGRAM
+abstract class ATM {
+
+    abstract void withdraw();
+
+    void checkBalance() {
+        System.out.println("Checking account balance...");
+    }
+}
+class SBI extends ATM {
+    @Override
+    void withdraw() {
+        System.out.println("Money withdrawn from SBI ATM");
+    }
+}
+class Abstraction {
+    public static void main(String[] args) {
+        SBI obj = new SBI();
+        obj.withdraw();
+        obj.checkBalance();
+    }
+}
+
+
+ENCAPSULATION
+-->PROGRAM
+class BankAccount {
+
+    private double balance = 5000;
+
+    public void deposit(double amount) {
+
+        if (amount > 0) {
+            balance = balance + amount;
+            System.out.println("Amount deposited successfully");
+        }
+    }
+
+    public void withdraw(double amount) {
+
+        if (amount > 0 && amount <= balance) {
+            balance = balance - amount;
+            System.out.println("Amount withdrawn successfully");
+        } else {
+            System.out.println("Insufficient balance");
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+class Encapsulation {
+    public static void main(String[] args) {
+
+        BankAccount account = new BankAccount();
+
+        account.deposit(2000);
+        account.withdraw(1000);
+
+        System.out.println("Current Balance: " + account.getBalance());
+    }
+}
